@@ -1,0 +1,54 @@
+$pri-color:#F9B208;
+$sec-color:#F98404;
+$body-color:#EDEDED;
+$navcolor1: #F8EFD4;
+$navcolor2:#FAFCC2;
+$d-card-cl: #F9F9F9;
+
+$f-sz: 1.4rem;
+$art-sz:0.7rem;
+$bold-txt: 300;
+$bolder-txt: bolder;
+
+$btn-color: linear-gradient($pri-color, $sec-color);
+$h-btn-color: linear-gradient($sec-color, $pri-color);
+$txt-color: #F8EDE3;
+$txt-margin: 6px;
+
+@mixin h-g-btn {
+    background: $h-btn-color;
+    font-size: 1em;
+    box-shadow: 0 10px 25px $sec-color;
+}
+@mixin g-btn {
+    background: $btn-color;
+    border: 0;
+    padding: 8px 15px;
+    color: $txt-color;
+    border-radius: 20px;
+    font-size: .9em;
+    box-shadow: 0 5px 25px $pri-color;
+}
+@mixin p-txt {
+    line-height: 1.3rem;
+    margin: $txt-margin 0;
+    font-size: $art-sz;
+    font-weight: bolder;
+    color: black;
+}
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin egg {
+    padding: 10px 7px 7px 10px;
+    font-size: .8rem;
+    border: 0;
+    border-radius: 50%;
+}
+@mixin grid12 {
+    display: grid;
+    grid-template-columns: repeat(12,8.3%);
+    grid-template-rows: repeat(12,8.3%);
+}
